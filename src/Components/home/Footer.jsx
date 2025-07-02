@@ -1,4 +1,4 @@
-import downarrow from '../images/down-arrow.png';
+import downarrow from '../../images/down-arrow.png';
 
 function Footer(prop) {
 
@@ -9,17 +9,17 @@ function Footer(prop) {
     });
   }
   return (
-    <footer className={`${prop.nav} ${prop.tx} p-4`}>
-      <div className="grid grid-cols-3 items-center text-sm px-4">
+    <footer className={`w-full ${prop.nav} ${prop.tx}`}>
+      <div className="flex justify-between items-center text-sm px-2 py-5">
 
-        <div></div>
+        <div className='h-7 aspect-square'></div>
 
         <p className="text-center">
-          © {new Date().getFullYear()} Kaushal Kejriwal. All rights reserved.
+          © {new Date().getFullYear()} Kaushal Kejriwal. All rights reserved. 
         </p>
 
-        <div className="flex justify-end gap-4">
-          <a
+        <div className="flex px-5">
+          {/* <a
             href="https://github.com/yourusername"
             target="_blank"
             rel="noopener noreferrer"
@@ -40,8 +40,8 @@ function Footer(prop) {
             className="hover:text-blue-400"
           >
             Email
-          </a>
-          <img src={downarrow} className='h-6' onClick={scrollToTop} title="down icons" />
+          </a> */}
+          <img src={downarrow} className='h-7 aspect-square' onClick={scrollToTop} title="down icons" />
         </div>
 
       </div>
