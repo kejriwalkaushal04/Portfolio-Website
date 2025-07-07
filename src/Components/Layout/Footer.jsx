@@ -9,7 +9,7 @@ function Footer(prop) {
     });
   }
   return (
-    <footer className={`w-full ${prop.nav} ${prop.tx}`}>
+    <footer className={`w-full flex flex-col justify-end ${prop.nav} ${prop.tx}`}>
       <div className="flex justify-between items-center text-sm px-2 py-5">
 
         <div className='h-7 aspect-square'></div>
