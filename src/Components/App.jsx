@@ -15,7 +15,7 @@ function App() {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/Portfolio/' element={<Layout nav={nav} setnav={setnav} bg={bg} setbg={setbg} tx={tx} settx={settx} />}>
+      <Route path='/' element={<Layout nav={nav} setnav={setnav} bg={bg} setbg={setbg} tx={tx} settx={settx} />}>
         <Route path='' element={<Home nav={nav} setnav={setnav} bg={bg} setbg={setbg} tx={tx} settx={settx} />} />
         <Route path='Resume' element={<Resume nav={nav} setnav={setnav} bg={bg} setbg={setbg} tx={tx} settx={settx} />} />
         <Route path='Projects' element={<Projects nav={nav} setnav={setnav} bg={bg} setbg={setbg} tx={tx} settx={settx} />} />

@@ -25,15 +25,15 @@ function Navbar(prop) {
     <>
       <div className=" ">
         <div className={`flex ${prop.nav} ${prop.tx} justify-between min-w-screen place-items-center px-8 py-5 md:px-32`} >
-          <Link to="/Portfolio/" className="text-xl font-bold ">Kaushal's Portfolio</Link>
+          <Link to="/" className="text-xl font-bold ">Kaushal's Portfolio</Link>
 
 
           <ul className="hidden xl:flex justify-end gap-4 font-semibold text-base ">
-            <li><Link to="/Portfolio/" className="hover:text-blue-400" target="blank">Home</Link></li>
-            <li><Link to="/Portfolio/Resume" className="hover:text-blue-400" target="blank">Resume</Link></li>
-            <li><Link to="/Portfolio/Projects" className="hover:text-blue-400">Projects</Link></li>
+            <li><Link to="/" className="hover:text-blue-400" target="blank">Home</Link></li>
+            <li><Link to="/Resume" className="hover:text-blue-400" target="blank">Resume</Link></li>
+            <li><Link to="/Projects" className="hover:text-blue-400">Projects</Link></li>
             {/* <li><Link to="/Portfolio/Certifications" className="hover:text-blue-400">Certifications</Link></li> */}
-            <li><Link to="/Portfolio/Contact" className="hover:text-blue-400 ">Contact</Link></li>
+            <li><Link to="/Contact" className="hover:text-blue-400 ">Contact</Link></li>
             <li><img src={mode} alt="toggle-button" className="flex align-middle size-7 " onClick={update} /></li>
           </ul>
 
@@ -41,11 +41,11 @@ function Navbar(prop) {
 
           <ul className={`absolute xl:hidden top-24 left-0 w-full ${prop.nav} py-2 flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform ${isMenuOpen ? "opacity-100" : "opacity-0"}`}
             style={{ transition: "transfrom 0.3s ease,opacity 0.3s ease" }}>
-            <li><Link to="/Portfolio/" className=" list-none w-full text-center p-4 hover:text-blue-400 transition-all cursor-pointer" target="blank">Home</Link></li>
-            <li><Link to="#Resume" className=" list-none w-full text-center p-4 hover:text-blue-400 transition-all cursor-pointer" target="blank">Resume</Link></li>
-            <li><Link to="/Portfolio/Projects" className=" list-none w-full text-center p-4 hover:text-blue-400 transition-all cursor-pointer" target="blank">Projects</Link></li>
+            <li><Link to="/" className=" list-none w-full text-center p-4 hover:text-blue-400 transition-all cursor-pointer" target="blank">Home</Link></li>
+            <li><Link to="/Resume" className=" list-none w-full text-center p-4 hover:text-blue-400 transition-all cursor-pointer" target="blank">Resume</Link></li>
+            <li><Link to="/Projects" className=" list-none w-full text-center p-4 hover:text-blue-400 transition-all cursor-pointer" target="blank">Projects</Link></li>
             {/* <li><Link to="/Portfolio/Certifications" className=" list-none w-full text-center p-4 hover:text-blue-400 transition-all cursor-pointer" target="blank">Certifications</Link></li> */}
-            <li><Link to="/Portfolio/Contact" className=" list-none w-full text-center p-4 hover:text-blue-400 transition-all cursor-pointer" target="blank">Contact</Link></li>
+            <li><Link to="/Contact" className=" list-none w-full text-center p-4 hover:text-blue-400 transition-all cursor-pointer" target="blank">Contact</Link></li>
             <li><img src={mode} alt="toggle-button" className="list-none size-7 cursor-pointer" onClick={update} /></li>
 
           </ul>
