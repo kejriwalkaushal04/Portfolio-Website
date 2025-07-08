@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaGithub, FaInstagram, FaTwitter, FaLinkedin, FaEnvelope, FaCode } from 'react-icons/fa';
+import axios from 'axios';
 
 export default function Contact(prop) {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -10,9 +11,17 @@ export default function Contact(prop) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);  // Replace this with API call
-    alert("Message Sent!");
-    setFormData({ name: '', email: '', message: '' });
+    const currentDateTime = new Date().toLocaleString();
+    const submissionData = {
+      ...formData,
+      datetime: currentDateTime,
+    };
+    axios.post("https://sheetdb.io/api/v1/riqg76qrrk18w", { data: submissionData }).then(response => { alert("Message Sent!"); setFormData({ name: '', email: '', message: '' }); })
+    .catch(error => {
+      console.error("Error:", error);
+      alert("Error sending message");
+    });
+
   };
 
   return (
