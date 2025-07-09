@@ -83,6 +83,16 @@ function Resume(prop) {
                             <li>Javascript</li>
                         </ul>
                     </div>
+
+                    <div class={`flex flex-col gap-3 p-5 rounded-2xl ${prop.nav} shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer`}>
+                        <h5 class="text-xl font-semibold text-purple-700">Designing and Editing Software</h5>
+                        <ul class="list-disc list-inside space-y-1">
+                            <li>Adobe Photoshop</li>
+                            <li>Adobe Lightroom</li>
+                            <li>Canva</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <section class={`${prop.bg} mt-5 pt-10 px-6`}>
