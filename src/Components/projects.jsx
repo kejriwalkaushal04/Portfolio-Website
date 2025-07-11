@@ -1,6 +1,7 @@
 import Explo from '../images/explo.jpeg'
 import Portfolio from "../images/Portfolio.png"
 import Internship from "../images/internship.png"
+import weather from "../images/weather.png"
 
 function Projects(prop) {
     return (
@@ -18,6 +19,20 @@ function Projects(prop) {
                         <p className="text-base">A responsive front-end project using React, TailwindCSS, and modern JavaScript to build interactive UIs.</p>
                         <a target="_blank">
                             <button className="mt-auto px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow" onClick={()=>alert("Welcome! You're viewing my Portfolio Website.")}>
+                                View Project
+                            </button>
+                        </a>
+                    </div>
+
+                    <div className={`flex flex-col gap-3 p-5 rounded-2xl ${prop.nav} shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 ease-in-out`}>
+
+                         <img src={weather} alt="Project Screenshot" className="rounded-xl mb-3" />
+
+                        <h5 className="text-xl font-semibold text-indigo-700">WeatherVue</h5>
+
+                        <p className="text-base">A responsive React weather app showing real-time data with dynamic backgrounds and icons using OpenWeather API.</p>
+                        <a href='https://kejriwalkaushal04.github.io/WeatherVue/' target="_blank">
+                            <button className="mt-auto px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow">
                                 View Project
                             </button>
                         </a>
